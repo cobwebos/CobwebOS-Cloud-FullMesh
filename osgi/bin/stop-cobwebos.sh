@@ -16,26 +16,9 @@
 #    limitations under the License.
 #
 
-echo `date` " begin to stop cobwebos-devops ..." >> logs/logstop.log
-while true
-    do
-    pid=`ps -ef |grep "cobwebos-devops.war" |grep -v grep | awk '{print $2}'`
-	echo pid=${pid}
-    if [ ${pid} ]; then
-        echo `date` "cobwebos-devops pid=${pid} is running" >> logs/logstop.log
-		kill -9 $pid >> logs/logstop.log
-        break;
-    else
-	   PROCESS=`ps -ef |grep "cobwebos-devops.war" |grep -v grep | awk '{print $2}'`
-	   echo PROCESS=${PROCESS}
-        for i in $PROCESS
-           do
-               echo `date` "Kill the $1 process [ $i ]" >> logs/logstop.log
-               kill -9 $i >> logs/logstop.log
-           done      
-      
-		echo `date` " end to stoping cobwebos-devops ..." >> logs/logstop.log
-        break
-    fi
-done
-echo `date` " end to stop cobwebos-devops ..." >> logs/logstop.log
+
+echo begin to stop cobwebos ...
+bin/zkServer.sh stop
+echo end to stop cobwebos ...
+
+exit

@@ -98,4 +98,5 @@
         </plugins>
     </build>
 
+    <url>https://github.com/cobwebos/cobwebos-fullmesh</url>
 </project>

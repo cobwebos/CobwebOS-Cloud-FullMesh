@@ -11,6 +11,14 @@ import org.apache.log4j.PropertyConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * 
+ * @author cobwebos
+ * @version 1.0.0
+ *
+ */
+
+
 public class CobwebosUtils {
 	Logger log = LoggerFactory.getLogger(CobwebosUtils.class);
 	private static final CobwebosUtils cos = new CobwebosUtils();

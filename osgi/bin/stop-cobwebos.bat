@@ -17,10 +17,9 @@ rem    See the License for the specific language governing permissions and
 rem    limitations under the License.
 rem
 
-echo begin to stop cobwebos-devops
 
-TASKKILL /IM cobwebos-devops.exe /F
-
-echo end to stop cobwebos-devops
+echo begin to stop cobwebos ...
+TASKKILL /IM cobwebos-fullmeshd.exe /F
+echo end to stop cobwebos ...
 
 exit

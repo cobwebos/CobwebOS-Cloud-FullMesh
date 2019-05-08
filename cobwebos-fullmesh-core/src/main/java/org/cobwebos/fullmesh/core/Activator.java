@@ -25,6 +25,13 @@ import org.osgi.framework.BundleContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * 
+ * @author cobwebos
+ * @version 1.0.0
+ *
+ */
+
 public class Activator implements BundleActivator {
 
 	private Logger log = LoggerFactory.getLogger(Activator.class);

@@ -17,11 +17,9 @@ rem    See the License for the specific language governing permissions and
 rem    limitations under the License.
 rem
 
-echo begin to start cobwebos-devops ...
-
-TASKKILL /IM cobwebos-devops.exe /F
-jdk\bin\cobwebos-devops.exe -jar lib\cobwebos\cobwebos-devops.war &
-echo end to start cobwebos-devops ...
+echo begin to start cobwebos ...
+bin\zkServer.cmd &
+echo end to start cobwebos ...
 
 exit
 

@@ -10,6 +10,13 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * 
+ * @author cobwebos
+ * @version 1.0.0
+ *
+ */
+
 public class CliUtil {
 	private Logger log = LoggerFactory.getLogger(CliUtil.class);
 	private List<String> stdoutList = new ArrayList<String>();
