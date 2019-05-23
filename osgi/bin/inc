@@ -299,7 +299,7 @@ setupDefaults() {
         fi
     fi
 
-    DEFAULT_JAVA_DEBUG_PORT="50052"
+    DEFAULT_JAVA_DEBUG_PORT="11015"
     if [ "x${JAVA_DEBUG_PORT}" = "x" ]; then
         JAVA_DEBUG_PORT="${DEFAULT_JAVA_DEBUG_PORT}"
     fi
